@@ -6,7 +6,7 @@ public class FunctionScenerio2 {
 
 	public static void main(String[] args)			//Ambani
 	{
-		int ans=areaRect();//call
+		double ans=areaRect();//call
 		System.out.println("Area of Rectangle is "+ans);  			  //serve
 	}
 	
@@ -24,3 +24,5 @@ public class FunctionScenerio2 {
 	}
 
 }
+//write 3 function by scenerio1,2,3 to calculate simple interest
+//formulae simpleInterest = (principle*rateOfInterest*numberOfYears)/100;
