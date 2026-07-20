@@ -1,19 +1,21 @@
-package day10;
+package day11;
 
 import java.util.Scanner;
 
-public class ArmstrongUsingFunctionUsingConditionalOperator {
+public class ArmstrongBetween1To1000UsingFunction {
 
 	
 public static void main(String[] args) {
 		
 		
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter a number");
-		int num=sc.nextInt();		//153
-		int sum=checkArmstrong(num);
-		
-		System.out.println(num==sum?"num + " + "is Armstrong" :num + " is not Armstrong");
+		for(int i=1;i<=1000;i++)
+		{
+		int sum=checkArmstrong(i);
+		if(i==sum)
+		{
+		System.out.println(i + " is Armstrong");
+		}
+		}
 	}
 	
 	
