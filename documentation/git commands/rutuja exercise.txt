@@ -1,0 +1,52 @@
+git clone https://github.com/uysolanki/B13-Git-Practice-Repo
+
+open the folder in eclipse
+
+open the folder git bash
+
+git branch
+
+git branch feature/rutujacode
+
+git branch
+
+git checkout feature/rutujacode
+
+git branch
+
+start coding in eclipse
+make a new folder "day2"
+checkPrime
+
+git bash
+
+git status
+
+git add .
+
+git status
+
+git commit -m "prime code"
+
+git push -u origin feature/rutujacode
+
+goto github repo and raise Pull Request
+
+PR url send it to your boss
+
+----------develper job done-----
+
+manager
+
+review the PR
+merge the branch to master
+delete the branch both(from github & git) git branch -d feature/rutujacode
+
+
+----- other develper----
+
+git checkout master
+
+git pull origin master 
+
+----you will be in sync with the latest code---
