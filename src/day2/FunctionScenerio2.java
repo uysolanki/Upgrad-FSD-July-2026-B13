@@ -16,7 +16,7 @@ public class FunctionScenerio2 {
 		System.out.println("Enter Length of Rectangle");
 		int length=sc.nextInt();
 		System.out.println("Enter Breadth of Rectangle");
-		int breadth=sc.nextInt();									   //buy
+		int breadth=sc.nextInt();									  //buy
 		
 		int area=length*breadth;									  //cook
 		
