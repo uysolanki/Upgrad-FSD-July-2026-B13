@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 public class FunctionScenerio2 {
 
-	public static void main(String[] args)			//Ambani
+	public static void main(String[] args)			//Common man
 	{
-		double ans=areaRect();//call
+		int ans=areaRect();//call
 		System.out.println("Area of Rectangle is "+ans);  			  //serve
 	}
 	
-	public static int areaRect()					//5 * Hotel
+	public static int areaRect()					//honest caterer
 	{
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter Length of Rectangle");

@@ -6,7 +6,7 @@ public class FunctionScenerio1 {
 
 	public static void main(String[] args)			//Ambani
 	{
-		areaRect();//call
+		areaRect();														//call
 	}
 	
 	public static void areaRect()					//5 * Hotel
