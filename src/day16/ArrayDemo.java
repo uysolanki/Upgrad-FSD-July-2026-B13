@@ -17,6 +17,9 @@ public class ArrayDemo {
 				
 				for(int i=0;i<ages.length-1;i++)
 					System.out.println(ages[i]);
+				
+				
+				System.out.println(ages[0] + ages[ages.length-1]);
 	}
 
 }
