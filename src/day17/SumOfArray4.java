@@ -3,7 +3,7 @@ package day17;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class SumOfArray3 {  		//82373
+public class SumOfArray4 {  		//82373
 
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);	
@@ -38,13 +38,11 @@ public class SumOfArray3 {  		//82373
 			if(arr[i]%2==0)
 				sumOfEvens+=arr[i];
 			
-			if(arr[i]%2==1)
-				sumOfOdds+=arr[i];
 		}
 		
 		System.out.println("\nSum of All Numbers "+sumOfAll);
 		System.out.println("Sum of All Even Numbers "+sumOfEvens);
-		System.out.println("Sum of All Odd Numbers "+sumOfOdds);
+		System.out.println("Sum of All Odd Numbers "+(sumOfAll-sumOfEvens));
 		}
 
 }
