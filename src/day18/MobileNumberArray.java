@@ -44,11 +44,13 @@ public class MobileNumberArray {
 			if(oddCount>evenCount)
 				numberType="Odd Biased Number";
 			else if(oddCount<evenCount)
-				numberType="Even Biased Number";
+				numberType="Even Biased";
 			else
 				numberType="Balanced Number";
 			
-			System.out.println("Mobile Number " +(i+1) + " is " + mobiles[i] +", it has " +oddCount+" odd digits & "+evenCount +" even digits, it is "+numberType);
+		//	System.out.println("Mobile Number " +(i+1) + " is " + mobiles[i] +", it has " +oddCount+" odd digits & "+evenCount +" even digits, it is "+numberType);
+System.out.printf("\nMobile Number %d is %d, it has %d odd digits & %d even digits, it is %s",(i+1),mobiles[i],oddCount,evenCount,numberType);
+			
 		}
 		
 	}

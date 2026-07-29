@@ -46,7 +46,9 @@ public class MobileNumberArray2 {
 			else
 				numberType="Balanced Number";
 			
-			System.out.println("Mobile Number " +(i+1) + " is " + mobiles[i] +", it has " +oddCount+" odd digits & "+ (10-oddCount) +" even digits, it is "+numberType);
+			//System.out.println("Mobile Number " +(i+1) + " is " + mobiles[i] +", it has " +oddCount+" odd digits & "+ (10-oddCount) +" even digits, it is "+numberType);
+			System.out.printf("Mobile Number " +(i+1) + " is " + mobiles[i] +", it has " +oddCount+" odd digits & "+ (10-oddCount) +" even digits, it is "+numberType);
+			
 		}
 		
 	}
