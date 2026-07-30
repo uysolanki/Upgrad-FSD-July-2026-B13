@@ -24,12 +24,12 @@ public class BusinessTarget2 {
 
 	}
 
-	private static void targets(int[] income) {
-		Scanner sc = new Scanner(System.in);            //         j
-		System.out.println("Enter number of targets");  //[500,700,1000,600,1200,1500,1300]
-		int targetCount = sc.nextInt();
-		int sum=0;
-		int k=0;
+	private static void targets(int[] income) {         //mon tue 
+		Scanner sc = new Scanner(System.in);            // 0   1   2    3   4    5    6
+		System.out.println("Enter number of targets");  //[500,700,1000,600,1200,1500,1300]  =4800
+		int targetCount = sc.nextInt();					//targetCount
+		int sum=0;//monday morn his bal=0				//3
+		int k=0;  //work starting frm which day - 0
 		for(int i=1;i<=targetCount;i++)					
 		{
 			System.out.println("Enter Target " + i);
@@ -50,7 +50,10 @@ public class BusinessTarget2 {
 			}											//20000
 			
 			if(flag==0)
+			{
 				System.out.println("Mission Impossible");
+				sum=0;
+			}
 		}
 		
 	}

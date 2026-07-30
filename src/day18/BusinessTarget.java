@@ -10,7 +10,7 @@ public class BusinessTarget {
 		System.out.println("Enter number of days shop open in a week");
 		int size = sc.nextInt();
 
-		int income[] = new int[size];
+		int income[] = new int[size];			
 		
 		
 		for (int i = 0; i < income.length; i++) // i
