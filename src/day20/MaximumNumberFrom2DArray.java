@@ -2,14 +2,11 @@ package day20;
 
 import java.util.Scanner;
 
-public class Array2D3 {
+public class MaximumNumberFrom2DArray {
 
 	public static void main(String[] args) {
 		int matrix[][]= new int[3][3];
-		int sumofAll=0;
-		int sumofDiagonal=0;
-		int sumofUT=0;
-		int sumofLT=0;
+		
 		
 		Scanner sc=new Scanner(System.in);
 		for(int i=0;i<matrix.length;i++)  //rows
@@ -21,31 +18,29 @@ public class Array2D3 {
 		  }
 		}
 		
+		
+		
 		for(int i=0;i<matrix.length;i++)  //rows
 		{
 		  for(int j=0;j<matrix[i].length;j++) //cols
 		  {
 			  System.out.print(matrix[i][j]+"\t");
-			  
-			  sumofAll+=matrix[i][j];
-			  
-			  if(i==j)
-				  sumofDiagonal+=matrix[i][j];
-			  
-			  if(i<j)
-				  sumofUT+=matrix[i][j];
-			  
-			  if(i>j)
-				  sumofLT+=matrix[i][j];
 		  }
 		  System.out.println();
 		}
 		
-		System.out.println("Sum of All Numbers is "+sumofAll);
-		System.out.println("Sum of All Diagonal Numbers is "+sumofDiagonal);
-		System.out.println("Sum of All Upper Triangle Numbers is "+sumofUT);
-		System.out.println("Sum of All Lower Triangle Numbers is "+sumofLT);
-
+		int max=matrix[0][0];
+		for(int i=0;i<matrix.length;i++)  //rows
+		{
+		  for(int j=0;j<matrix[i].length;j++) //cols
+		  {
+			  if(matrix[i][j]>max)
+			  {
+				  max=matrix[i][j];
+			  }
+		  }
+		}
+		System.out.println("Maximum Numbers in array is "+max);
 	}
 
 }
