@@ -19,7 +19,7 @@ public class CurrencyExchange4 {
 	private static void calculateExchange(int[] currency, int amount) {
 		
 		int notes[]= new int[currency.length];
-		int sum=0;									//6750   is 6750>0 Tr
+		int sum=0;								//6750   is 6750>0 Tr
 			for(int i=0;i<currency.length;i++)	//250
 			{									//50
 					if(amount>9)
