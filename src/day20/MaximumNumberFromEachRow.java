@@ -40,9 +40,8 @@ public class MaximumNumberFromEachRow {
 				  max=matrix[i][j];
 			  }
 		  }
-		  
+		  System.out.println("Maximum Numbers from row "+(i+1) + " is " + max);
 		}
-		
 	}
 
 }
