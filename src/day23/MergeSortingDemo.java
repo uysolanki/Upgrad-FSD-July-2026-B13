@@ -12,8 +12,8 @@ public class MergeSortingDemo {
 
 	}
 
-	private static void mergeSorting(int[] arr, int left, int right) {
-		if(left<right)
+	public static void mergeSorting(int[] arr, int left, int right) {
+		if(left<right)  //base condtition
 		{
 			int mid=(left+right)/2;
 			mergeSorting(arr,left,mid);
@@ -72,4 +72,12 @@ public class MergeSortingDemo {
 
 }
 
+/*
 //O(n log n)
+            i                        j
+1  2  8  9                  3       15      16     21
+
+k
+1  2  3  8   9
+
+*/
