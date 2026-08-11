@@ -7,11 +7,12 @@ public static void main(String[] args) {
 	                               
 	//String str="nitin";				
 	//String str="nitina";	
-	String str="a * nut for : a jar of  _ tuna";
+	String str="A man, A Plan A Canal : Panama";
+	str=str.toLowerCase(); //amanaplanacanalpanama
 	System.out.println(str);
     str=str.replaceAll("[^A-Za-z]","");
 	System.out.println(str);
-	//System.out.println(checkPalindrome(str)?"Palindrome":"Not Palindrome");
+	System.out.println(checkPalindrome(str)?"Palindrome":"Not Palindrome");
 	
 }
 
