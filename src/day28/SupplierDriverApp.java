@@ -9,7 +9,7 @@ public class SupplierDriverApp {
 		
 		
 		s1.displaySupplier();
-		System.out.println(s1.supplierId);
+		//System.out.println(s1.supplierId);
 		
 	}
 
