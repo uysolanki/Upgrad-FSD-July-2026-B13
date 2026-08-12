@@ -47,5 +47,11 @@ public class Supplier {
 		
 		System.out.println("COD accpeted " + (isCODAccepted?"Yes":"No"));
 	}
+	
+	public void test()
+	{
+		Supplier s2=new Supplier();   //Anant object
+		System.out.println(s2.supplierId);
+	}
 
 }
