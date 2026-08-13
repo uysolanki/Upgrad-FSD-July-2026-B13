@@ -4,6 +4,8 @@ public class Login {
 	
 	private String username;
 	private String password;
+	private int atmPin;
+	public double height;
 	public String getUsername() {
 		return username;
 	}
@@ -16,8 +18,16 @@ public class Login {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	public int getAtmPin() {
+		return atmPin;
+	}
+	public void setAtmPin(int atmPin) {
+		this.atmPin = atmPin;
+	}
 	
-
+	
+	
+	
 	
 	
 //	public void setUsername(String s)			//setter

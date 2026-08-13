@@ -7,15 +7,16 @@ public class ArmstrongBetween1To1000UsingFunction {
 	
 public static void main(String[] args) {
 		
-		
 		for(int i=1;i<=1000;i++)
 		{
 		int sum=checkArmstrong(i);
 		if(i==sum)
 		{
+			
 		System.out.println(i + " is Armstrong");
 		}
 		}
+		
 	}
 	
 	

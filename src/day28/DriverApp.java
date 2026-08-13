@@ -6,7 +6,6 @@ public class DriverApp {
 		Student s1=new Student();
 		s1.acceptStudent();
 		s1.displayStudent();
-
 	}
 
 }
