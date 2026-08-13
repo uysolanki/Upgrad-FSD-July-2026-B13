@@ -8,9 +8,13 @@ public class Student {
 	private String studentName;				//instance scope
 	private double per;						//instance scope
 	
-	static private String batchName="B13";	//static aka class scope
-	
-	
+	private static String batchName;	//static aka class scope
+	private static String coodName;
+	static
+	{
+		batchName="FSDB13";
+		coodName="Srushti";
+	}
 	
 	public int getRno() {
 		return rno;
@@ -47,11 +51,22 @@ public class Student {
 		this.per=sc.nextDouble();
 	}
 	
-	public void displayStudent()
-	{
+	public void displayStudent()  //non static function
+	{ 
+		//int rno=9;
 		System.out.println("Roll Number is "+this.rno);
 		System.out.println("Student Name is "+this.studentName);
 		System.out.println("Percenatage is "+this.per);
+	}
+	
+	public static void displayBatchName()  //static function
+	{
 		System.out.println("I am studying in batch "+ Student.batchName);
+		test();
+	}
+	
+	public static void test()
+	{
+		System.out.println("HI");
 	}
 }
