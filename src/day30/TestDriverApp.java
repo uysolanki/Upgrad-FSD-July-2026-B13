@@ -18,6 +18,8 @@ public class TestDriverApp {
 		
 		t2=new Test();
 		t2.setX(777);
+		
+		
 	}
 
 }
