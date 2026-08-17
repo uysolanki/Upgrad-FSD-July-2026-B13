@@ -1,7 +1,5 @@
 package day31;
 
-import java.util.Scanner;
-
 public class Student {
 	
 	private int rno;						
@@ -36,5 +34,40 @@ public class Student {
 		System.out.println("Student Name is "+this.studentName);
 		System.out.println("Percenatage is "+this.per);
 	}
+
+	public int getRno() {
+		return rno;
+	}
+
+	public void setRno(int rno) {
+		this.rno = rno;
+	}
+
+	public String getStudentName() {
+		return studentName;
+	}
+
+	public void setStudentName(String studentName) {
+		this.studentName = studentName;
+	}
+
+	public double getPer() {
+		return per;
+	}
+
+	public void setPer(double per) {
+		this.per = per;
+	}
 	
+	public boolean searchByName(String name)
+	{
+		return this.studentName.equals(name);
+	}
+
+	public boolean searchByRollNumber(int searchedRno) {
+		if(this.rno==searchedRno)
+			return true;
+		else
+			return false;
+	}
 }
