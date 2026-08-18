@@ -6,6 +6,7 @@ public class SingleInheritanceDriverApp2 {
 		
 		Employee2 e1=new Employee2("Ben",23,"Pune",101,"Analyst",5000.0);
 		e1.displayEmployee();
+	
 	}
 
 }

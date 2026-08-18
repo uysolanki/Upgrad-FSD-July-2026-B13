@@ -1,17 +1,16 @@
 package day32;
 
-import java.util.Scanner;
-
-public class Person2 {						//total properties = 3
+public class Person3 {						//total properties = 3
 
 	protected String name;
 	protected int age;
 	protected String city;
 	
+	public Person3() {
+		System.out.println("Good Morning");
+	}
 	
-	//public Person2() {}
-	
-	public Person2(String name, int age, String city) {
+	public Person3(String name, int age, String city) {
 		this.name = name;
 		this.age = age;
 		this.city = city;
