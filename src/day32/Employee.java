@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Employee extends Person {
 	
-	private int empId;                        //total properties = 6
+	int empId;                        //total properties = 6
 	private String designation;
 	private double salary;
 	
