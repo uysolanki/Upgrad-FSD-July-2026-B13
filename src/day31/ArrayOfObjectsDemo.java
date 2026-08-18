@@ -39,14 +39,44 @@ public class ArrayOfObjectsDemo {
 			System.out.println("Not Found");
 		
 		
+//		int searchedRno=45;
+//		int flag2=0;  //not found
+//		for(int i=0;i<batch.length;i++)
+//		{
+//			boolean result=batch[i].searchByRollNumber(searchedRno);
+//			if(result==true)
+//			{
+//				System.out.println("Found");
+//				flag2=1;
+//				break;
+//			}
+//		}
+//		
+//		if(flag2==0)
+//			System.out.println("Not Found");
 		
+		
+//		int searchedRno=45;
+//		int flag2=0;  //not found
+//		for(Student student:batch)
+//		{
+//			boolean result=student.searchByRollNumber(searchedRno);
+//			if(result)
+//			{
+//				System.out.println("Found");
+//				flag2=1;
+//				break;
+//			}
+//		}
+//		
+//		if(flag2==0)
+//			System.out.println("Not Found");
 		
 		int searchedRno=45;
 		int flag2=0;  //not found
-		for(int i=0;i<batch.length;i++)
+		for(Student student:batch)
 		{
-			boolean result=batch[i].searchByRollNumber(searchedRno);
-			if(result==true)
+			if(student.searchByRollNumber(searchedRno))
 			{
 				System.out.println("Found");
 				flag2=1;
