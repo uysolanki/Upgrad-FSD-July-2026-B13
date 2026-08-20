@@ -59,12 +59,12 @@ public class Student {
 		this.per = per;
 	}
 	
-	public boolean searchByName(String name)
+	public boolean search(String name)
 	{
 		return this.studentName.equals(name);
 	}
 
-	public boolean searchByRollNumber(int searchedRno) {
+	public boolean search(int searchedRno) {
 		if(this.rno==searchedRno)
 			return true;
 		else

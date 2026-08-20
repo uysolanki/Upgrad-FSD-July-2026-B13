@@ -8,9 +8,7 @@ public class DriverApp4 {
 		double l=10.8;
 		test(new Abhishek());
 		
-		demo();
-		
-		
+		demo();	
 	}
 
 	public static void test(Amitabh t)

@@ -26,7 +26,7 @@ public class ArrayOfObjectsDemo {
 		int flag1=0;  //not found
 		for(int i=0;i<batch.length;i++)
 		{
-			boolean result=batch[i].searchByName(searchedName);
+			boolean result=batch[i].search(searchedName);
 			if(result==true)
 			{
 				System.out.println("Found");
@@ -76,7 +76,7 @@ public class ArrayOfObjectsDemo {
 		int flag2=0;  //not found
 		for(Student student:batch)
 		{
-			if(student.searchByRollNumber(searchedRno))
+			if(student.search(searchedRno))
 			{
 				System.out.println("Found");
 				flag2=1;

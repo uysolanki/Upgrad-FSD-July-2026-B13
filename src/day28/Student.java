@@ -20,5 +20,15 @@ public class Student {
 		System.out.println("Percenatage is "+per);
 	}
 	
+	//function overloading							name is same arguement are differenent
+	public void search(int rno)
+	{
+		
+	}
+	
+	public void search(String name)
+	{
+		
+	}
 
 }
