@@ -2,7 +2,6 @@ package day34;
 
 public class Horse implements Animal
 {
-
 	public void eat()
 	{
 		System.out.println("Horse Eating..");
