@@ -9,9 +9,9 @@ public class ArithmeticExceptionDemo2 {
 		Scanner sc=new Scanner(System.in);
 		try
 		{
-		System.out.println("Enter Numerator");
+		System.out.println("Enter Numerator");   //"apple"     10
 		int numerator = sc.nextInt();
-		System.out.println("Enter Denominator"); 
+		System.out.println("Enter Denominator");            //  0
 		int denominator = sc.nextInt();
 		//String name="Alice";
 		String name=null;
