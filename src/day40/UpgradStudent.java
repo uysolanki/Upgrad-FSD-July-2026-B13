@@ -8,8 +8,6 @@ public class UpgradStudent  implements Serializable
 	private int rno;						
 	private String studentName;				
 	private double per;						
-	private String abc;
-	private String xyz;
 	
 	public UpgradStudent()   
 	{
