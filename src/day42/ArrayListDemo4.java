@@ -17,7 +17,7 @@ public class ArrayListDemo4 {
 		{
 			if(customer.getEmail().equals(searchedEmail))
 			{
-				System.out.println(searchedEmail + "Customer exists");
+				System.out.println(searchedEmail + " Customer exists");
 				flag=1;
 				break;
 			}
