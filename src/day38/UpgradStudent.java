@@ -1,15 +1,14 @@
-package day40;
+package day38;
 
 import java.io.Serializable;
 
 public class UpgradStudent  implements Serializable
 {
-	private static final long serialVersionUID = 1L;
+//	private static final long serialVersionUID = 1L;
 	private int rno;						
 	private String studentName;				
-	private double per;		
-	private int temp;
-	private double temp1;
+	private double per;						
+	
 	public UpgradStudent()   
 	{
 		this.rno=1;

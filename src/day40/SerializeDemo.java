@@ -2,13 +2,12 @@ package day40;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.ObjectOutput;
 import java.io.ObjectOutputStream;
 
 public class SerializeDemo {
 
 	public static void main(String[] args) throws IOException {
-		UpgradStudent stud1=new UpgradStudent(333,"Chris",98.7);
+		UpgradStudent stud1=new UpgradStudent(444,"Bravo",98.7);
 		System.out.println(stud1);
 		
 		String fileName="myfolder/file5.txt";

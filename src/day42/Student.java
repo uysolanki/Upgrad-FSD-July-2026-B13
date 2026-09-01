@@ -1,30 +1,30 @@
-package day40;
+package day42;
 
-import java.io.Serializable;
-
-public class UpgradStudent  implements Serializable
-{
-	private static final long serialVersionUID = 1L;
+public class Student {
+	
 	private int rno;						
 	private String studentName;				
-	private double per;		
-	private int temp;
-	private double temp1;
-	public UpgradStudent()   
+	private double per;						
+	
+	
+	public Student()   
 	{
 		this.rno=1;
 		this.studentName="Rahul";
 		this.per=40.0;
 	}
 	
-	public UpgradStudent(int x, String y, double z) 
+	public Student(int x, String y, double z)  throws  NullPointerException
 	{
 		this.rno=x;
+		if(y==null)
+			throw new NullPointerException();
 		this.studentName=y;
 		this.per=z;
 	}
 	
 
+	
 	public int getRno() {
 		return rno;
 	}
@@ -53,4 +53,6 @@ public class UpgradStudent  implements Serializable
 	public String toString() {
 		return "Student [rno=" + rno + ", studentName=" + studentName + ", per=" + per + "]";
 	}
+	
+	
 }
