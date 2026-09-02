@@ -1,8 +1,9 @@
 methods of Collection interface
 
-public boolean add(Object o)
-public boolean add(int index,Object o)
-public int size();
-public boolean isEmpty();
-public boolean contains(Object o);
-public boolean clear();   //truncate
+1. public boolean add(Object o)
+2. public boolean add(int index,Object o)
+3. public int size();
+4. public boolean isEmpty();
+5. public boolean contains(Object o);
+6. public boolean clear();   //truncate
+7. public boolean addAll(Collection c)  -->smaller collection adds into a larger collection
