@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Pizza",
+    "category": "Fast Food",
+    "price": 299
+  },
+  {
+    "id": 2,
+    "name": "Burger",
+    "category": "Fast Food",
+    "price": 199
+  },
+  {
+    "id": 3,
+    "name": "Biryani",
+    "category": "Indian",
+    "price": 249
+  },
+  {
+    "id": 4,
+    "name": "Masala Dosa",
+    "category": "South Indian",
+    "price": 149
+  },
+  {
+    "id": 5,
+    "name": "Paneer Tikka",
+    "category": "Indian",
+    "price": 279
+  },
+  {
+    "id": 6,
+    "name": "Fried Rice",
+    "category": "Chinese",
+    "price": 189
+  },
+  {
+    "id": 7,
+    "name": "Pasta",
+    "category": "Italian",
+    "price": 229
+  },
+  {
+    "id": 8,
+    "name": "Veg Manchurian",
+    "category": "Chinese",
+    "price": 179
+  },
+  {
+    "id": 9,
+    "name": "Gulab Jamun",
+    "category": "Dessert",
+    "price": 99
+  },
+  {
+    "id": 10,
+    "name": "Ice Cream",
+    "category": "Dessert",
+    "price": 129
+  }
+]
