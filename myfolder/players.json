@@ -1,0 +1,102 @@
+[
+  {
+    "pno": 1,
+    "playerName": "Virat Kohli",
+    "matchesPlayed": 275,
+    "runScored": 13800,
+    "cathesTaken": 160,
+    "wicketsTaken": 4,
+    "trophiesWon": 25,
+    "country": "India"
+  },
+  {
+    "pno": 2,
+    "playerName": "Rohit Sharma",
+    "matchesPlayed": 265,
+    "runScored": 11200,
+    "cathesTaken": 95,
+    "wicketsTaken": 10,
+    "trophiesWon": 18,
+    "country": "India"
+  },
+  {
+    "pno": 3,
+    "playerName": "Babar Azam",
+    "matchesPlayed": 220,
+    "runScored": 10500,
+    "cathesTaken": 85,
+    "wicketsTaken": 2,
+    "trophiesWon": 12,
+    "country": "Pakistan"
+  },
+  {
+    "pno": 4,
+    "playerName": "Kane Williamson",
+    "matchesPlayed": 210,
+    "runScored": 9800,
+    "cathesTaken": 110,
+    "wicketsTaken": 8,
+    "trophiesWon": 15,
+    "country": "New Zealand"
+  },
+  {
+    "pno": 5,
+    "playerName": "Joe Root",
+    "matchesPlayed": 250,
+    "runScored": 11500,
+    "cathesTaken": 150,
+    "wicketsTaken": 20,
+    "trophiesWon": 22,
+    "country": "England"
+  },
+  {
+    "pno": 6,
+    "playerName": "Steve Smith",
+    "matchesPlayed": 230,
+    "runScored": 10200,
+    "cathesTaken": 125,
+    "wicketsTaken": 5,
+    "trophiesWon": 14,
+    "country": "Australia"
+  },
+  {
+    "pno": 7,
+    "playerName": "Ben Stokes",
+    "matchesPlayed": 180,
+    "runScored": 6200,
+    "cathesTaken": 100,
+    "wicketsTaken": 190,
+    "trophiesWon": 12,
+    "country": "England"
+  },
+  {
+    "pno": 8,
+    "playerName": "Ravindra Jadeja",
+    "matchesPlayed": 300,
+    "runScored": 5600,
+    "cathesTaken": 210,
+    "wicketsTaken": 550,
+    "trophiesWon": 16,
+    "country": "India"
+  },
+  {
+    "pno": 9,
+    "playerName": "Jasprit Bumrah",
+    "matchesPlayed": 180,
+    "runScored": 350,
+    "cathesTaken": 55,
+    "wicketsTaken": 400,
+    "trophiesWon": 8,
+    "country": "India"
+  },
+  {
+    "pno": 10,
+    "playerName": "Shakib Al Hasan",
+    "matchesPlayed": 250,
+    "runScored": 7500,
+    "cathesTaken": 130,
+    "wicketsTaken": 650,
+    "trophiesWon": 20,
+    "country": "Bangladesh"
+  }
+]

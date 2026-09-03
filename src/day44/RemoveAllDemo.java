@@ -34,9 +34,7 @@ public class RemoveAllDemo {
 		System.out.println(India.containsAll(mh));
 		
 		int index=mh.indexOf("Lonavla");
-		System.out.println(index);
-		
+		System.out.println(index);	
 	}
-
 }
 //pno pname matchesplayed runscored cathestaken wicketstaken trophieswon country
