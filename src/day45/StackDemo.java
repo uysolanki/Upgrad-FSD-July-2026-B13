@@ -6,7 +6,7 @@ public class StackDemo {
 
 	public static void main(String[] args) {
 		
-		String str1="nptin";
+		String str1="prajwal";
 		Stack<Character> stack=new Stack();								
 		for(char ch:str1.toCharArray())
 		{
