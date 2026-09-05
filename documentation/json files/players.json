@@ -1,0 +1,128 @@
+[
+  {
+    "no": 1,
+    "name": "Virat Kohli",
+    "matchesPlayed": 254,
+    "runsScored": 12898,
+    "catchesTaken": 152,
+    "trophies": 2,
+    "countryName": "India"
+  },
+  {
+    "no": 2,
+    "name": "Rohit Sharma",
+    "matchesPlayed": 265,
+    "runsScored": 10866,
+    "catchesTaken": 98,
+    "trophies": 2,
+    "countryName": "India"
+  },
+  {
+    "no": 3,
+    "name": "MS Dhoni",
+    "matchesPlayed": 350,
+    "runsScored": 10773,
+    "catchesTaken": 256,
+    "trophies": 3,
+    "countryName": "India"
+  },
+  {
+    "no": 4,
+    "name": "Sachin Tendulkar",
+    "matchesPlayed": 463,
+    "runsScored": 18426,
+    "catchesTaken": 140,
+    "trophies": 3,
+    "countryName": "India"
+  },
+  {
+    "no": 5,
+    "name": "Rahul Dravid",
+    "matchesPlayed": 344,
+    "runsScored": 13288,
+    "catchesTaken": 210,
+    "trophies": 1,
+    "countryName": "India"
+  },
+  {
+    "no": 6,
+    "name": "Yuvraj Singh",
+    "matchesPlayed": 304,
+    "runsScored": 8701,
+    "catchesTaken": 94,
+    "trophies": 2,
+    "countryName": "India"
+  },
+  {
+    "no": 7,
+    "name": "Sourav Ganguly",
+    "matchesPlayed": 311,
+    "runsScored": 11363,
+    "catchesTaken": 100,
+    "trophies": 1,
+    "countryName": "India"
+  },
+  {
+    "no": 8,
+    "name": "AB de Villiers",
+    "matchesPlayed": 420,
+    "runsScored": 20014,
+    "catchesTaken": 120,
+    "trophies": 3,
+    "countryName": "South Africa"
+  },
+  {
+    "no": 9,
+    "name": "Quinton DeKock",
+    "matchesPlayed": 120,
+    "runsScored": 2534,
+    "catchesTaken": 38,
+    "trophies": 1,
+    "countryName": "South Africa"
+  },
+  {
+    "no": 10,
+    "name": "Jacques Kallis",
+    "matchesPlayed": 519,
+    "runsScored": 25534,
+    "catchesTaken": 338,
+    "trophies": 4,
+    "countryName": "South Africa"
+  },
+  {
+    "no": 11,
+    "name": "David Miller",
+    "matchesPlayed": 230,
+    "runsScored": 5534,
+    "catchesTaken": 108,
+    "trophies": 2,
+    "countryName": "South Africa"
+  },
+  {
+    "no": 12,
+    "name": "Ricky Ponting",
+    "matchesPlayed": 560,
+    "runsScored": 27483,
+    "catchesTaken": 160,
+    "trophies": 4,
+    "countryName": "Australia"
+  },
+  {
+    "no": 13,
+    "name": "Adam Gilchrist",
+    "matchesPlayed": 460,
+    "runsScored": 20483,
+    "catchesTaken": 260,
+    "trophies": 3,
+    "countryName": "Australia"
+  },
+  {
+    "no": 14,
+    "name": "Brian Lara",
+    "matchesPlayed": 500,
+    "runsScored": 23483,
+    "catchesTaken": 150,
+    "trophies": 7,
+    "countryName": "West Indies"
+  }
+]
