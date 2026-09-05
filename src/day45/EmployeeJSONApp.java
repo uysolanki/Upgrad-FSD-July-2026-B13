@@ -16,11 +16,9 @@ public class EmployeeJSONApp {
         try {
         	employees = mapper.readValue(
             	//new File("D:\\EclipseJavaprogs2\\Test\\json\\employee.json"),	      //absolute path
-                new File("myfolder/employee.json"),									  //relative path
+                new File("myfolder/employee2.json"),									  //relative path
                 new TypeReference< List<Employee>>() {}
             );
-            
-      
        
         } catch (Exception e) {
             e.printStackTrace();
@@ -29,6 +27,18 @@ public class EmployeeJSONApp {
         //System.out.println(employees);
         for(Employee employee:employees)
         	System.out.println(employee);
+        
+        System.out.println("*** Employees working in IT Dept****");
+        for(Employee employee:employees)
+        {
+        	if(employee.getDepartment().equalsIgnoreCase("it"))
+        	{
+        		System.out.println(employee.getName());
+        	}
+        }
+        	
+        
+        
 	}
 
 }
