@@ -5,10 +5,10 @@ import java.util.Stack;
 public class ExpressionValidness {
 
 	public static void main(String[] args) {
-	//String expression="{[()]}";
+		String expression="{[()]}";
 	//	String expression="{[(])}";
-//		String expression="}[(])}";
-		String expression="{[()]";
+	//	String expression="}[(])}";
+	//	String expression="{[()]";
 		
 		if(expression==null || expression.length()==0 ||  expression.length()%2==1)
 		System.out.println("Invalid Expression");
@@ -19,7 +19,7 @@ public class ExpressionValidness {
 
 	private static boolean checkValidity(String expression) {
 		Stack<Character> stack=new Stack();
-																// (    <--top
+																// (    <--top         ch=')'
 		for(char ch:expression.toCharArray())					// [
 		{														// {
 			if(ch=='{'|| ch=='[' || ch=='(')
