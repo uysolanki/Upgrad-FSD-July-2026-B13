@@ -3,10 +3,12 @@ package day53;
 import java.util.HashMap;
 import java.util.Map;
 
-public class CharOccuranceInWord {
+public class FirstRepeatedCharInWord {
 
 	public static void main(String[] args) {
-		String sentance="java";
+//		String sentance="java";
+//		String sentance="programming";
+		String sentance="mango";
 		
 		Map<Character,Integer> hashmap=new HashMap();
 		
@@ -22,7 +24,22 @@ public class CharOccuranceInWord {
 			}
 		}
 		System.out.println(hashmap);
-	}
+		
+		int flag=0;
+		for(char key:sentance.toCharArray())	//key='j'
+		{
+			if(hashmap.get(key)>1)
+			{
+				System.out.println(key);
+				flag=1;
+				break;
+			}
+		}
+			
+			if(flag==0)
+				System.out.println("No repeated char");
+		}
+	
 
 }
 
