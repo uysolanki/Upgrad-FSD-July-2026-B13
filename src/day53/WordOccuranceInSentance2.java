@@ -23,7 +23,6 @@ public class WordOccuranceInSentance2 {
 
 /*
 {
-twinkle=2
 } 
 */
 
