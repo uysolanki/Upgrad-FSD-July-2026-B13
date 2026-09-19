@@ -99,7 +99,7 @@ public class SinglyLinkedListDemo {
 			else
 			{
 				temp.setNext(nn);
-				temp=nn;
+				temp=temp.getNext();
 			}
 		}
 		return head;
