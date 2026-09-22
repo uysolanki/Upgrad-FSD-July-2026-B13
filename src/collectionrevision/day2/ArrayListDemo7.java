@@ -2,9 +2,10 @@ package collectionrevision.day2;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
-public class ArrayListDemo6 {
+public class ArrayListDemo7 {
 
 	public static void main(String[] args) {
 	
@@ -162,36 +163,45 @@ public class ArrayListDemo6 {
                 List.of("IPL","World Cup", "Champions Trophy")
         );
         
-        List<Player> csk=new ArrayList();
-        csk.add(rohit);
-        csk.add(surya);
-        csk.add(pandya);
-        csk.add(bumrah);
-        csk.add(sachin);
-        csk.add(ghazanfar);
-        csk.add(nabi);
         
-        List<Player> rcb=new ArrayList();
-        rcb.add(boult);
-        rcb.add(quinton);
-        rcb.add(williamson);
-        rcb.add(steyn);
+        List<Player> IndianPlayers=new ArrayList();
+        IndianPlayers.add(rohit);
+        IndianPlayers.add(surya);
+        IndianPlayers.add(bumrah);
+        IndianPlayers.add(pandya);
+        IndianPlayers.add(sachin);
         
         
-        List<List<Player>> ipl = new ArrayList();
+        List<Player> newZealandPlayers=new ArrayList();
+        newZealandPlayers.add(boult);
+        newZealandPlayers.add(williamson);
         
-        ipl.add(csk);
-        ipl.add(rcb);
+        List<Player> southAfricaPlayers=new ArrayList();
+        southAfricaPlayers.add(quinton);
+        southAfricaPlayers.add(steyn);
+		
+        List<Player> afghanistanPlayers=new ArrayList();
+        afghanistanPlayers.add(ghazanfar);
+        afghanistanPlayers.add(nabi);
         
-        System.out.println(ipl.size());
+        List<Player> mumbaiIndians=new ArrayList();
+        mumbaiIndians.addAll(IndianPlayers);
+        mumbaiIndians.addAll(newZealandPlayers);
+        mumbaiIndians.addAll(southAfricaPlayers);
+        mumbaiIndians.addAll(afghanistanPlayers);
         
-        
-        for(int i=0;i<ipl.size();i++)
+        System.out.println(mumbaiIndians.size()); //11
+        for(Player player:mumbaiIndians)
         {
-        	 System.out.println("team " +(i+1) +" has " +	ipl.get(i).size()  + " players");
+        	player.calculateBattingAverage();
         }
         
-   
-   }
+        Collections.sort(mumbaiIndians);
+        System.out.println("*** MI Averages in ASC Order ****");
+        for(Player player:mumbaiIndians)
+        {
+        	System.out.println(player.getPlayerName());
+        }
+	}
 
 }

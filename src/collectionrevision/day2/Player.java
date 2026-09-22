@@ -2,7 +2,7 @@ package collectionrevision.day2;
 
 import java.util.List;
 
-public class Player {
+public class Player implements Comparable<Player>{
 
     private int jerseyNumber;
     private String playerName;
@@ -155,6 +155,30 @@ public class Player {
 
 	public double getBattingAverage() {
 		return battingAverage;
+	}
+
+//	@Override											//comparing based on name in ASC order
+//	public int compareTo(Player p1) {
+//		return playerName.compareTo(p1.playerName);
+//	}
+	
+	
+//	@Override											//comparing based on averages in ASC order
+//	public int compareTo(Player p1) {
+//		if(this.getBattingAverage()>p1.getBattingAverage())
+//			return 1;
+//		else if(this.getBattingAverage()<p1.getBattingAverage())
+//			return -1;
+//		else return 0;
+//	}
+	
+	@Override											//comparing based on averages in DESC order
+	public int compareTo(Player p1) {
+		if(this.getBattingAverage()>p1.getBattingAverage())
+			return -1;
+		else if(this.getBattingAverage()<p1.getBattingAverage())
+			return 1;
+		else return 0;
 	}
     
     
