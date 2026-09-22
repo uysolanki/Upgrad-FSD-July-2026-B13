@@ -191,6 +191,15 @@ public class ArrayListDemo6 {
         	 System.out.println("team " +(i+1) +" has " +	ipl.get(i).size()  + " players");
         }
         
+        
+        //display name of players from each team who has scored >2000 runs and taken >100 wickets
+        //player from team 1 who have scored >2000 runs and taken >100 wickets are as follows
+        //Steyn
+        //Bumrah
+        //player from team 2 who have scored >2000 runs and taken >100 wickets are as follows
+        //Sachin
+        //Rohit
+        
    
    }
 
