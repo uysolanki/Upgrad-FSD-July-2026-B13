@@ -191,6 +191,11 @@ public class ArrayListDemo5 {
         
         System.out.println(mumbaiIndians.size());
         
+        for(Player player:mumbaiIndians)
+        {
+        	player.calculateBattingAverage();
+        }
+        
         //display average runs of mi team
         int totalRuns=0;
         for(Player player:mumbaiIndians)
@@ -200,13 +205,19 @@ public class ArrayListDemo5 {
         System.out.println("Average runs of Mumbai Indians" +totalRuns/mumbaiIndians.size());
         
         
-      //display name of all mi players
+        //display name of all mi players along with category
         System.out.println("*** MI Squad ****");
         for(Player player:mumbaiIndians)
         {
         	System.out.println(player.getPlayerName() + "(" + player.getCategory() + ")");
         }
         
+        //display name of all mi players names along with batting average
+        
+        for(Player player:mumbaiIndians)
+        {
+        	System.out.println(player.getPlayerName() + "(" + player.getBattingAverage() + ")");
+        }
 	}
 
 }

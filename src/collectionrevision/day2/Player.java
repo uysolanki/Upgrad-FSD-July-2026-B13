@@ -15,6 +15,8 @@ public class Player {
     private int centuries;
     private String category;
     private List<String> trophies;
+    
+    private double battingAverage;
 
     // Default Constructor
     public Player() {
@@ -145,4 +147,15 @@ public class Player {
                 ", trophies=" + trophies +
                 '}';
     }
+    
+    public void calculateBattingAverage()
+    {
+    	battingAverage=runsScored/matchesPlayed;
+    }
+
+	public double getBattingAverage() {
+		return battingAverage;
+	}
+    
+    
 }
