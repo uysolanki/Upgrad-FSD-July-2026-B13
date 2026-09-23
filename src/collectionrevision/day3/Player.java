@@ -1,4 +1,4 @@
-package collectionrevision.day2;
+package collectionrevision.day3;
 
 import java.util.List;
 
