@@ -1,0 +1,130 @@
+[
+  [
+    {
+      "jerseyNumber": 45,
+      "playerName": "Rohit Sharma",
+      "matchesPlayed": 250,
+      "runsScored": 11000,
+      "catchesTaken": 105,
+      "wicketsTaken": 0,
+      "fours": 1000,
+      "sixes": 300,
+      "centuries": 30,
+      "category": "Batsman",
+      "trophies": ["World Cup", "Champions Trophy", "IPL"]
+    },
+    {
+      "jerseyNumber": 63,
+      "playerName": "Suryakumar Yadav",
+      "matchesPlayed": 150,
+      "runsScored": 5000,
+      "catchesTaken": 80,
+      "wicketsTaken": 0,
+      "fours": 500,
+      "sixes": 250,
+      "centuries": 5,
+      "category": "Batsman",
+      "trophies": ["T20 World Cup", "IPL"]
+    },
+    {
+      "jerseyNumber": 33,
+      "playerName": "Hardik Pandya",
+      "matchesPlayed": 180,
+      "runsScored": 4500,
+      "catchesTaken": 90,
+      "wicketsTaken": 150,
+      "fours": 350,
+      "sixes": 200,
+      "centuries": 0,
+      "category": "All Rounder",
+      "trophies": []
+    }
+  ],
+
+  [
+    {
+      "jerseyNumber": 18,
+      "playerName": "Trent Boult",
+      "matchesPlayed": 150,
+      "runsScored": 400,
+      "catchesTaken": 60,
+      "wicketsTaken": 300,
+      "fours": 20,
+      "sixes": 2,
+      "centuries": 0,
+      "category": "Bowler",
+      "trophies": ["World Cup", "IPL"]
+    },
+    {
+      "jerseyNumber": 22,
+      "playerName": "Kane Williamson",
+      "matchesPlayed": 200,
+      "runsScored": 9000,
+      "catchesTaken": 100,
+      "wicketsTaken": 0,
+      "fours": 800,
+      "sixes": 100,
+      "centuries": 25,
+      "category": "Batsman",
+      "trophies": ["World Test Championship"]
+    }
+  ],
+
+  [
+    {
+      "jerseyNumber": 21,
+      "playerName": "Allah Ghazanfar",
+      "matchesPlayed": 20,
+      "runsScored": 100,
+      "catchesTaken": 5,
+      "wicketsTaken": 25,
+      "fours": 5,
+      "sixes": 2,
+      "centuries": 0,
+      "category": "Bowler",
+      "trophies": []
+    },
+    {
+      "jerseyNumber": 7,
+      "playerName": "Mohammad Nabi",
+      "matchesPlayed": 200,
+      "runsScored": 3500,
+      "catchesTaken": 100,
+      "wicketsTaken": 200,
+      "fours": 300,
+      "sixes": 100,
+      "centuries": 0,
+      "category": "All Rounder",
+      "trophies": ["Asia Cup", "IPL"]
+    }
+  ],
+
+  [
+    {
+      "jerseyNumber": 12,
+      "playerName": "Quinton de Kock",
+      "matchesPlayed": 180,
+      "runsScored": 8000,
+      "catchesTaken": 150,
+      "wicketsTaken": 0,
+      "fours": 750,
+      "sixes": 150,
+      "centuries": 25,
+      "category": "Wicket Keeper Batsman",
+      "trophies": ["World Cup", "IPL"]
+    },
+    {
+      "jerseyNumber": 8,
+      "playerName": "Dale Steyn",
+      "matchesPlayed": 100,
+      "runsScored": 400,
+      "catchesTaken": 50,
+      "wicketsTaken": 400,
+      "fours": 30,
+      "sixes": 2,
+      "centuries": 0,
+      "category": "Bowler",
+      "trophies": ["IPL"]
+    }
+  ]
+]
