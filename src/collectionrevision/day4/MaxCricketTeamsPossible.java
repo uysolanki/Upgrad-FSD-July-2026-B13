@@ -2,7 +2,7 @@ package collectionrevision.day4;
 
 import java.util.Arrays;
 
-public class MinCricketTeamsPossible {
+public class MaxCricketTeamsPossible {
 
 	public static void main(String[] args) {
 		int players[]= {5,4,4,3};
