@@ -10,8 +10,6 @@ public class MaxCricketTeamsPossible {
 		
 		int max=maxPossibleTeams(players,s);
 		System.out.println(max==-1? "No teams Possible" : max + "teams possible");
-		
-
 	}
 
 	private static int maxPossibleTeams(int[] players, int s) {
