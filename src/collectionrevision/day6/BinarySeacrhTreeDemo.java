@@ -1,4 +1,4 @@
-package day55;
+package collectionrevision.day6;
 
 import java.util.Scanner;
 

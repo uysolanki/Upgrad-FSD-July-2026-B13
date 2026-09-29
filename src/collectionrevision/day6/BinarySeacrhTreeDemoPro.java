@@ -1,8 +1,8 @@
-package day55;
+package collectionrevision.day6;
 
 import java.util.Scanner;
 
-public class BinarySeacrhTreeDemo {
+public class BinarySeacrhTreeDemoPro {
 
 	public static void main(String[] args) {
 		Node root=null;
@@ -44,7 +44,6 @@ public class BinarySeacrhTreeDemo {
 			postOrderTraversal(root.getLeft());
 			postOrderTraversal(root.getRight());
 			System.out.print(root.getData()+",");
-			
 		}
 		
 	}
@@ -64,29 +63,8 @@ public class BinarySeacrhTreeDemo {
 				root=nn;
 			}
 			else
-			{     //110            100                   true
-				if(nn.getData() >= root.getData())   //go to right side
-				{
-						if(root.getRight()==null)    //check space avl on right side
-						{
-							root.setRight(nn);
-						}
-						else
-						{
-							insertNode(root.getRight(),nn);    //(2000,4000)
-						}
-				}
-				else
-				{
-					if(root.getLeft()==null)
-					{
-						root.setLeft(nn);
-					}
-					else
-					{
-						insertNode(root.getLeft(),nn);
-					}
-				}
+			{ 
+				insertNode(root, nn);	//1000,4000
 			}
 			
 			System.out.println("Do you wish to add another node 1-Yes 0-No");
@@ -94,7 +72,7 @@ public class BinarySeacrhTreeDemo {
 		}while(choice==1);
 		
 		return root;
-	}								//125        110
+	}								//125      110
 									//3000,     4000
 	private static void insertNode(Node root, Node nn) {
 		if(nn.getData()>=root.getData())
