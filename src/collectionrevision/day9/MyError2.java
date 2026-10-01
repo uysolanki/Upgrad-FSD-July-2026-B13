@@ -1,14 +1,14 @@
 package collectionrevision.day9;
 
-public enum MyError {
+public enum MyError2 {
 	
-	ERR01("ERR-01","Please enter valid Username"),
+	ERR01("ERR-01","%s is not a valid Username"),
 	ERR02("ERR-02","Please enter valid Password");
 	
 	private String errorId;
 	private String errorName;
 	
-	private MyError(String errorId,String errorName)
+	private MyError2(String errorId,String errorName)
 	{
 		this.errorId=errorId;
 		this.errorName=errorName;
