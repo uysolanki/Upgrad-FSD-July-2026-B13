@@ -42,5 +42,4 @@ public enum Planet {
 	public String toString() {
 		return "Graha [radius=" + radius + ", mass=" + mass + ", gravity=" + gravity + "]";
 	}
-
 }
