@@ -21,8 +21,6 @@ public enum MyError2 {
 	public String getErrorName() {
 		return errorName;
 	}
-
-	
 }
 
 //Please enter valid Username
