@@ -25,3 +25,6 @@ public class ThreeConsecutiveSum2 {
 	}
 
 }
+
+//array hardcode {8,2,9,9,9,0,7,6,8,9}
+//n=3
