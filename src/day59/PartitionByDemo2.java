@@ -15,8 +15,57 @@ public class PartitionByDemo2 {
 				
 		months.stream()
 		.collect(Collectors.partitioningBy(m->m.length()>5));
+		/*
+		hashmap
+		{
+		true:[January","February","August","September","October","November","December"]
+		false:["March","April","May","June","July"]
+		}*/
+
 		
-		System.out.println(hashmap.get(true).size());
+
+		Map<Boolean,Long> hashmap1=
+				months.stream()
+				.collect(Collectors.partitioningBy(m->m.length()>5,Collectors.counting()));
+		
+		System.out.println(hashmap1);
+		/*{
+			true:7
+			false:5
+		}*/
+		
+		
+		
+		Map<Boolean,String> hashmap2=
+				months.stream()
+				.collect(Collectors.partitioningBy(m->m.length()>5,Collectors.joining()));
+		System.out.println(hashmap2);
+				
+				/*{
+				true:"JanuaryFebruaryAugustSeptemberOctoberNovemberDecember"]
+				false:"MarchAprilMayJuneJuly"
+				 */
+		
+		
+		
+		Map<Boolean,String> hashmap3=
+				months.stream()
+				.collect(Collectors.partitioningBy(m->m.length()>5,Collectors.joining("-")));
+				System.out.println(hashmap3);
+		/*{
+		true:"January-February-August-September-October-November-December"]
+		false:"March-April-May-June-July"
+		 */
+				
+				Map<Boolean,String> hashmap4=
+						months.stream()
+						.collect(Collectors.partitioningBy(m->m.length()>5,Collectors.joining("-","$","#")));
+						System.out.println(hashmap4);
+				
+				/*{
+				true:"$January-February-August-September-October-November-December#"]
+				false:"$March-April-May-June-July#"
+				 */
 
 	}
 
@@ -27,4 +76,17 @@ hashmap
 {
 true:[January","February","August","September","October","November","December"]
 false:["March","April","May","June","July"]
+}
+
+
+{
+true:7
+false:5
+}
+
+
+{
+true:"JanuaryFebruaryAugustSeptemberOctoberNovemberDecember"]
+false:"MarchAprilMayJuneJuly"
+}
 */
