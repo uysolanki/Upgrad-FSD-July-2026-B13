@@ -6,7 +6,7 @@ import java.util.List;
 public class MethodRefercingDemo2 {
 
 	public static void main(String[] args) {
-		List<Integer> numbers=Arrays.asList(6,12,18,28,32);
+		List<Integer> numbers=Arrays.asList(6,12,18,28,32);                //>=20
 										// T  F  F  T  F    => 6,28
 		
 //		numbers.stream()
