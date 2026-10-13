@@ -13,7 +13,7 @@ public class GroupWordsByLength {
 		
 		String sentence="one one two three four five six seven eight nine ten";
 		String words[]=sentence.split(" ");
-		System.out.println(Arrays.toString(words));
+		//System.out.println(Arrays.toString(words));
 		
 		Map<Integer,List<String>> hashmap   = new HashMap(); 
 		
@@ -25,7 +25,7 @@ public class GroupWordsByLength {
 			hashmap.get(key).add(word);
 		}
 		
-		System.out.println(hashmap.values());
+		System.out.println(hashmap);
 	}
 }
 
