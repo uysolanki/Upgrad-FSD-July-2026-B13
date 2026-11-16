@@ -15,6 +15,14 @@ public class GroupingByDemo3 {
 				.collect(Collectors.groupingBy(word->word.charAt(0),Collectors.counting()));
 		
 		System.out.println(hashmap);
+		
+		// the char which has the maximum count
+		char key=hashmap.entrySet().stream()
+		.max(Map.Entry.comparingByValue())  //{S=3} -> S
+		.map(Map.Entry::getKey)
+		.orElse(null);
+		
+		System.out.println(key);
 	}
 
 }

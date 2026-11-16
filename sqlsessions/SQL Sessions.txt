@@ -1,0 +1,59 @@
+create table emp1(
+eno int primary key auto_increment,
+ename varchar(15) not null,
+salary double check(salary>500),
+doj date check(doj <= CURRENT_DATE),
+passport varchar(10) unique,
+workmode varchar(10) check(workmode in('wfo','wfh','hybrid')),
+gender varchar(10) check(gender in('m','f')));
+
+insert into emp1(`ename`,`salary`,`doj`,`passport`,`workmode`,`gender`)
+values('Alice', 1000.0, '14-11-2000','A123456','wfh','m');
+
+
+insert into emp1(`ename`,`salary`,`doj`,`passport`,`workmode`,`gender`)
+values
+
+('Ben',   1000.0, '2000-11-14','V123456','wfh','m'),
+('Chris', 2000.0, '2001-11-14','B123456','wfo','m'),
+('David', 5000.0, '2002-11-14','C123456','wfo','f'),
+('Elcid', 3000.0, '2003-11-14','D123456','wfo','m');
+
+insert into emp1(`ename`,`salary`,`doj`,`passport`,`workmode`,`gender`,`mobile`)
+values
+
+('Rajesh',   6500.0, '2000-11-14','P123456','wfh','m',9890123123),
+('Anjali', 2400.0, '2001-11-14','Q123456','wfo','f',9890123456),
+('Preeti', 5600.0, '2002-11-14','R123456','wfo','f',9890123789),
+('Shyam', 2300.0, '2003-11-14','S123456','wfo','m',9890123111);
+
+
+
+SELECT *
+FROM emp1
+ORDER BY salary DESC
+
+
+SELECT *
+FROM emp1
+ORDER BY salary DESC, ename DESC
+
+select sum(salary) from emp1;
+select min(salary) from emp1;
+select max(salary) from emp1;
+select avg(salary) from emp1;
+select count(*) as 'Number of Employees'from emp1;
+
+
+select gender,count(*)
+from emp1
+group by gender;
+
+
+select gender,max(salary)
+from emp1
+group by gender;
+
+select workmode,avg(salary)
+from emp1
+group by workmode;

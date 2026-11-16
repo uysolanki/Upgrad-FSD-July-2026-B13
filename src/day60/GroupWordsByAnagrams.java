@@ -1,4 +1,4 @@
-package day54;
+package day60;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -6,23 +6,23 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-public class GroupWordsByLength2 {
+public class GroupWordsByAnagrams {
 
 	public static void main(String[] args) {
 		
 		
 		String sentence="silent listen listen note tone enot bca abc cab apple mango";
 		String words[]=sentence.split(" ");
-		
+		System.out.println(Arrays.toString(words));
 		
 		Map<String,Set<String>> hashmap   = new HashMap(); 
 		
-		for(String word:words)		//word="note"
+		for(String word:words)		//word="silent"
 		{
-			char arr[]=word.toCharArray(); //['n', 'o', 't, 'e' ]
-			Arrays.sort(arr);				//['e', 'n', 'o', 't' ]
-			String key=new String(arr);     //"enot"
-			hashmap.putIfAbsent(key, new HashSet());
+			char arr[]=word.toCharArray(); //['l', 'i', 's', 't', 'e', 'n' ]
+			Arrays.sort(arr);				//['e', 'i', 'l', 'n' , 's' ,'t']
+			String key=new String(arr);     //"eilnst"
+			hashmap.putIfAbsent(key, new HashSet());    
 			
 			hashmap.get(key).add(word);
 		}
@@ -37,7 +37,7 @@ public class GroupWordsByLength2 {
 
 /*
 {
-"eilnst" = [silent,listen]
+"eilnst" = [silent,listend]
 "enot" = [note]
 }
  */
