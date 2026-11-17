@@ -57,3 +57,33 @@ group by gender;
 select workmode,avg(salary)
 from emp1
 group by workmode;
+
+
+
+-- salary > 5000 platinum
+-- salary > 4000 gold
+-- salary > 3000 silver
+-- salary > 2000 bronze
+-- other plastic
+
+select ename,salary,
+case
+when salary > 5000 then 'Platinum'
+when salary > 4000 then 'Gold'
+when salary > 3000 then 'Silver'
+when salary > 2000 then 'Bronze'
+else 'Plastic'
+end as 'Category'
+from emp1;
+
+
+
+select case
+when salary > 5000 then 'Platinum'
+when salary > 4000 then 'Gold'
+when salary > 3000 then 'Silver'
+when salary > 2000 then 'Bronze'
+else 'Plastic'
+end as 'Category', count(*) as 'Number of Employees'
+from emp1
+group by Category;
