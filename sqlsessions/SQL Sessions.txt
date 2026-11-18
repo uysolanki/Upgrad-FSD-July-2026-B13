@@ -87,3 +87,53 @@ else 'Plastic'
 end as 'Category', count(*) as 'Number of Employees'
 from emp1
 group by Category;
+
+
+
+-- display the name of employees whose
+-- salary is > than the salaries of all emps working in Jaipur
+
+select ename 
+from emp1
+where salary > ALL (select salary from emp1 where city like 'Jaipur');
+
+-- display the name of employees whose
+-- salary is > than the salaries of any single emps working in Jaipur
+
+select ename 
+from emp1
+where salary > ANY (select salary from emp1 where city like 'Jaipur');
+
+
+--relationships
+
+create table chiefminister(
+cmno int auto_increment,
+cmname varchar(20) not null,
+gender varchar(10) check(gender in('m','f')),
+age int check(age>=50),
+primary key(cmno));
+
+
+create table state(
+sno int auto_increment,
+sname varchar(20) not null,
+capital varchar(10),
+cmno int unique,
+
+primary key(sno),
+foreign key(cmno) references chiefminister(cmno));
+
+insert into chiefminister(cmname,age,gender)
+values
+('Fadnavis',55,'m'),
+('Sharma',60,'m'),
+('Rekha',52,'f'),
+('Mamta',70,'f');
+
+insert into state(sname,capital,cmno)
+values
+('MH','Mumbai',1),
+('RJ','Jaipur',2),
+('Delhi','New Delhi',3),
+('WB','Kolkata',4);
