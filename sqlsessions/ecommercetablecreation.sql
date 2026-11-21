@@ -63,3 +63,25 @@ ord_id int,
 
 primary key(rat_id),
 foreign key(ord_id) references orders(ord_id));
+
+
+
+
+step 1: get all 
+select * from
+customer
+join
+orders
+on customer.cus_id = orders.cus_id;
+
+step : 2 row filtering
+SELECT *
+FROM customer
+JOIN orders ON customer.cus_id = orders.cus_id
+where cus_name like 'AAKASH';
+
+step 3 : col filtering
+SELECT count(*) as 'Number Of Orders'
+FROM customer
+JOIN orders ON customer.cus_id = orders.cus_id
+where cus_name like 'AAKASH';
