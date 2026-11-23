@@ -58,6 +58,15 @@ JOIN supplier_pricing sp ON o.pricing_id = sp.pricing_id
 GROUP BY cus_city
 
 
+SELECT cus_city, cus_name, max( supp_price )
+FROM customer c
+JOIN orders
+USING ( cus_id )
+JOIN supplier_pricing sp
+USING ( pricing_id )
+GROUP BY cus_city
+
+
 
 
 
