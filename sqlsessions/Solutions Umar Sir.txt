@@ -42,7 +42,20 @@ ORDER BY count( * ) DESC;
 
 
 
+q5 ) display the city wise costliest order
 
+step 1 :
+SELECT *
+FROM customer c
+JOIN orders o ON c.cus_id = o.cus_id
+JOIN supplier_pricing sp ON o.pricing_id = sp.pricing_id;
+
+step 2:
+SELECT cus_city, cus_name, max( supp_price )
+FROM customer c
+JOIN orders o ON c.cus_id = o.cus_id
+JOIN supplier_pricing sp ON o.pricing_id = sp.pricing_id
+GROUP BY cus_city
 
 
 
