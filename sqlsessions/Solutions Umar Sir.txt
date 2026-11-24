@@ -117,6 +117,15 @@ where
 cus_name like 'AAKASH'
 
 q5) Name of supplier and total prices of products delivered by that supplier
+
+
+
+
+
+
+
+
+
 select supp_name,sum(supp_price)
 from supplier,supplier_pricing
 where
@@ -134,6 +143,12 @@ having sum(supp_price)>30000
 
 
 q7) display name and price of products supplied by 'Rajesh Retails;
+
+
+
+
+
+
 select pro_name,supp_price
 from supplier,supplier_pricing,product
 where
@@ -286,7 +301,7 @@ group by supp_name;
 part 2:
 select supp_name, avg(stars),
 CASE
-	WHEN avg(stars) =5 THEN 'Excellent Service'
+	    WHEN avg(stars) =5 THEN 'Excellent Service'
     	WHEN avg(stars) >4 THEN 'Good Service'
     	WHEN avg(stars) >2 THEN 'Average Service'
     	ELSE 'Poor Service'
@@ -329,3 +344,34 @@ DELIMITER ;
 
 
 call customerValue()
+
+
+
+DELIMITER &&
+CREATE PROCEDURE top2SuppliersByCustomerRating()
+BEGIN
+select supp_name, avg(stars),
+CASE
+	    WHEN avg(stars) =5 THEN 'Excellent Service'
+    	WHEN avg(stars) >4 THEN 'Good Service'
+    	WHEN avg(stars) >2 THEN 'Average Service'
+    	ELSE 'Poor Service'
+END AS Type_of_Service
+from supplier
+join supplier_pricing
+using(supp_id)
+join
+orders
+using(pricing_id)
+join
+rating
+using(ord_id)
+group by supp_name
+order by avg(stars) DESC
+limit 0,2;
+END &&  
+DELIMITER ;
+
+top2SuppliersByCustomerRating()
+
+
