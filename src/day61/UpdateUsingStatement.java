@@ -1,0 +1,35 @@
+package day61;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+
+public class UpdateUsingStatement {
+
+	public static void main(String[] args)  throws Exception
+	{
+		Class.forName("com.mysql.jdbc.Driver");    //8.0.33 "com.mysql.cj.jdbc.Driver"
+		Connection connection = DriverManager.getConnection(
+		    "jdbc:mysql://localhost:3306/upgradb13db", "root", ""
+		);
+		
+
+		
+		String query1="update emp4 set salary=salary+100 where eno=4";
+		
+		
+		Statement st=connection.createStatement();
+		
+		
+		
+		int rows=st.executeUpdate(query1);			//0			1		2		3		4
+												//1         1       1       1       1
+		if(rows>0)
+		System.out.println(rows +" records Updated");
+		
+		st.close();
+		connection.close();
+
+	}
+
+}
