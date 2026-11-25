@@ -15,11 +15,14 @@ public class CreateTable {
 		
 		//System.out.println(connection.isClosed());
 		
-		String query="create table emp3(\r\n"
-				+ "eno int auto_increment,\r\n"
-				+ "ename varchar(20) not null,\r\n"
-				+ "salary double,\r\n"
-				+ "primary key(eno))";
+//		String query="create table emp3(\r\n"
+//				+ "eno int auto_increment,\r\n"
+//				+ "ename varchar(20) not null,\r\n"
+//				+ "salary double,\r\n"
+//				+ "primary key(eno))";
+		
+		
+		String query="create table emp4(eno int auto_increment,ename varchar(20) not null,salary double,primary key(eno))";
 		
 		
 		Statement st=connection.createStatement();
