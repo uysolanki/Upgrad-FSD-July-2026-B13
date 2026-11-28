@@ -10,16 +10,13 @@ public class InsertBatchUsingPreparedStatement {
 
 	public static void main(String[] args)  throws Exception
 	{
-		Class.forName("com.mysql.jdbc.Driver");    //8.0.33 "com.mysql.cj.jdbc.Driver"
-		Connection connection = DriverManager.getConnection(
-		    "jdbc:mysql://localhost:3306/upgradb13db", "root", ""
-		);
-		
-
+		Connection connection=MySQLDBConnectionUpgradB13.getDBConnection();
+	
 		Scanner sc=new Scanner(System.in);
 		
 		System.out.println("Enter Number of Emps to Add");
 		int size=sc.nextInt();
+		
 		String query="insert into emp4(ename,salary) values(?,?)";
 		PreparedStatement ps=connection.prepareStatement(query);
 		
@@ -40,8 +37,8 @@ public class InsertBatchUsingPreparedStatement {
 		ps.addBatch();
 		}
 		
-		int rows[]=ps.executeBatch();
-		
+		int rows[]=ps.executeBatch();		//	0		1		2		3				..			9
+											//  1       1       1       1                           1
 		if(rows.length>0)
 		System.out.println(rows.length +" records Inserted");
 		

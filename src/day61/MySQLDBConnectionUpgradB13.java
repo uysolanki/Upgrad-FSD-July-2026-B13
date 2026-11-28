@@ -15,3 +15,10 @@ public class MySQLDBConnectionUpgradB13 {
 		return connection;
 	}
 }
+
+
+//
+//student name         product percentage
+//--------------------98.600000											"%20s%f"
+//Akshata-------------											("%-20s%.2fs","Akshata",98.6)
+//-------------Akshata                                            "%20s"
